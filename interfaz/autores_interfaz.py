@@ -11,7 +11,7 @@ def iniciar_interfaz_autores(frame):
         meses = list(range(1, 13))
         anio_actual = datetime.datetime.now().year
         anios = list(range(anio_actual - 1000, anio_actual + 1))
-        anios.sort(reverse=True)  # Ordenar años de manera descendente
+        anios.sort(reverse=True)
         return dias, meses, anios
 
     dias, meses, anios = generar_listas_fecha()
